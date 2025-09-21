@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Diary</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <main>
+
+        <!--Sivun väri-->
+        <link rel="stylesheet" href="style.css">
+        </link>
+
+        <!--SISÄLTÖ-->
+        <!-- Korit-->
+        <div class="container-fluid" id="CARDS">
+            <!--Skirk-->
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="card mb-3">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
+                        <img src="Characters/Skirk/Skirk_Card.png" class="card-img-top" alt="Character: Skirk">
+                        <div class="card-body">
+                            <h5 class="card-title">Skirk</h5>
+                            <p class="card-text">5*, Cryo, SS-tier, Main-DPS</p>
+                            <a href="Skirk.html" class="btn btn-primary">Skirk Guide</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Escoffier-->
+                <div class="ccard mb-3">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
+                        <img src="Characters/Escoffier/card_escoffier.png" class="card-img-top"
+                            alt="Character: Escoffier"> <!--Muista lisää ALT tekstit muihinki-->
+                        <div class="card-body">
+                            <h5 class="card-title">Escoffier</h5>
+                            <p class="card-text">5*, Cryo, A-tier, Sub-DPS/Support</p>
+                            <a href="#" class="btn btn-primary">Escoffier Guide Coming</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Mualani-->
+                <div class="card mb-3">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
+                        <img src="Characters/Mualani/card_mualani.png" class="card-img-top" alt="Character: Mualani">
+                        <div class="card-body">
+                            <h5 class="card-title">Mualani</h5>
+                            <p class="card-text">5*, Hydro, A-tier, Main-DPS</p>
+                            <a href="#" class="btn btn-primary">Mualani Guide Coming</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Xilonen-->
+                <div class="card mb-3">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
+                        <img src="Characters/Xilonen/card_xilonen.png" class="card-img-top" alt="Character: Xilonen">
+                        <div class="card-body">
+                            <h5 class="card-title">Xilonen</h5>
+                            <p class="card-text">5*. Geo, SS-tier, Support</p>
+                            <a href="#" class="btn btn-primary">Xilonen Guide Coming</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Xiangling-->
+                <div class="card mb-3">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
+                        <img src="Characters/Xiangling/card_xiangling.png" class="card-img-top"
+                            alt="Character: Xiangling">
+                        <div class="card-body">
+                            <h5 class="card-title">Xiangling</h5>
+                            <p class="card-text">4*, C?, Pyro, A-tier, Sub-DPS. SS-tier pyro element applier.</p>
+                            <a href="#" class="btn btn-primary">Xiangling Guide Coming</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Ningguang-->
+                <div class="card mb-3">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
+                        <img src="Characters/Ningguang/card_ningguang.png" class="card-img-top"
+                            alt="Character: Ningguang">
+                        <div class="card-body">
+                            <h5 class="card-title">Ningguang</h5>
+                            <p class="card-text">4*, C6, Geo, A-tier, Main-DPS/Sub-DPS</p>
+                            <a href="#" class="btn btn-primary">Ningguang Guide Coming</a>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+    <!--Navigaatio-->
+    <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+
+                <!--Logo/kuva-->
+                <img src="Homepage/logo_resin.png" alt="Logo" style="width: 55px;" class="rounded-pill"
+                    href="index.html">
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <!--Valikon linkit-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dream_map.html">FOR MOTIVATION</a>
+                    </li>
+
+                    <!--Dropdown-valikko-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">PROJECTS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="character_cards.html">ALL PROJECTS</a></li>
+                            <li><a class="dropdown-item" href="Skirk.html">SKIRK</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</body>
