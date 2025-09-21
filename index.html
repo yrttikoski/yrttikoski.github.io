@@ -22,16 +22,6 @@
             <!--Karuselli elementti-->
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-                <!--Osoittaa sliden-->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">
-                    </button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1">
-                    </button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2">
-                    </button>
-                </div>
-
                 <!-- Carousel inner -->
                 <div class="carousel-inner">
 
@@ -57,11 +47,11 @@
                 </div>
 
                 <!--Nuolet-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" aria-label="Previous image" aria-controls="demo">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" aria-label="Next image" aria-controls="demo">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
             </div>
 
@@ -84,6 +74,15 @@
                 <img src="Homepage/logo_resin.png" alt="Logo" style="width: 55px;" class="rounded-pill"
                     href="index.html">
             </a>
+
+            <!--Avaa navbar, näytönlukijoille-->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar"
+                aria-controls="collapsibleNavbar"
+                aria-expanded="false"
+                aria-label="Open navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
