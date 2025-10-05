@@ -61,7 +61,9 @@
     <br>
 
     <script>
-        fetch('/tietue.json')
+        fetch('./fetch/tietue.json')
+            .then(res => res.json())
+            .then(data => console.log(data));
 
             //Vastauksen muunto JS olio
             .then(function (response) {
@@ -107,3 +109,4 @@
     </script>
 
 </body>
+
