@@ -1,0 +1,49 @@
+{
+  "otsikko": "JSON-datan käsittelyä",
+  "kuvaus": "Tällä sivustolle haetaan JSON-muotoista dataa",
+  "kuva": "https://images.unsplash.com/photo-1569682535081-3e826bee049b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?&w=500&h=650",
+  "opintojakso": {
+    "nimi": "Digitekniikat",
+    "tunnus": "DIG4TA021",
+    "opintopisteet": "5"
+  },
+  "toteutus": {
+    "nimi": "Digitekniikat",
+    "osallistujat_lkm": 5,
+    "osallistujat": [
+      "Anna Aalto",
+      "Pekka Peltonen",
+      "Sami Salmi",
+      "Laura Lahtinen",
+      "Mikko Miettinen"
+    ],
+    "alku": "2025-01-13",
+    "loppu": "2025-03-14",
+    "kesto_viikkoina": 8,
+    "Kuva": "https://images.unsplash.com/photo-1565689157206-0fddef7589a2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=355"
+  },
+  "sisalto": [
+    "low-code",
+    "sisällönhallintajärjestelmät",
+    "resposiivinen käyttöliittymä ja komponentit",
+    "tiedon haku julkisista palveluista rest-rajapinnan yli"
+  ],
+  "tekniikat": [
+    {
+      "aihe": "low-code",
+      "linkki": "https://www.weebly.com/"
+    },
+    {
+      "aihe": "wordpress",
+      "linkki": "https://wordpress.com/"
+    },
+    {
+      "aihe": "bootstrap",
+      "linkki": "https://getbootstrap.com/"
+    },
+    {
+      "aihe": "JSON",
+      "linkki": "https://www.json.org/json-en.html"
+    }
+  ]
+}
