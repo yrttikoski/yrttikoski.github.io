@@ -84,6 +84,7 @@
             title.</p>
         <br>
         <!--Hakukenttä-->
+        <label for="searchInput" class="visually-hidden">Haku</label>
         <input type="text" id="searchInput" class="form-control w-50 mx-auto"
             placeholder="for example: Aurelius / Meditations" />
     </div>
@@ -242,6 +243,18 @@
             position: relative;
         }
 
+        /*Hakukentän saavutettavuus korjaus*/
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+        
         /*Footer asetukset*/
         .footer {
             background: #312d2f;
