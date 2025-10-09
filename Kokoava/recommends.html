@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Recommend a Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigaatio -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
+        style="background-color: rgba(49, 45, 47, 0.95);">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold" href="index.html">BrainGloss ✨</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Sivut-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Main Page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gloss.html">Behind the Gloss</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recommends.html">Recommend a book</a></li>
+                </ul>
+
+                <!--Lukulista-->
+                <a href="list.html" class="btn btn-outline-danger">
+                    <i class="bi bi-heart-fill me-1"></i>
+                    Reading list
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-header py-5">
+        <div class="container px-4 px-lg-5 my-5 text-center text-light">
+            <h1 class="display-5 bg-dark bg-opacity-50 d-inline-block px-3 py-2 rounded-0">Recommend a Book</h1>
+        </div>
+    </header>
+
+    <div class="text-center mb-4">
+        <br>
+        <br>
+        <p>Share your favorite book with me, and let's both learn something new from each other! ✨</p>
+
+        <!--Lomake-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <!--Lomake Formspreeen-->
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="p-4 text-light shadow">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="book" class="form-label">Book Title *</label>
+                                <input type="text" class="form-control" id="book" name="book" placeholder="Book 1"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="author" class="form-label">Author *</label>
+                                <input type="text" class="form-control" id="author" name="author" placeholder="Author 1"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your thoughts here *</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"
+                                    placeholder="Why do you recommend this book?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-light w-100">Send Recommendation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer mt-5">
+            <p>© 2025 BrainGloss ✨</p>
+        </footer>
+
+        <style>
+            body {
+                background-color: rgb(90, 83, 87);
+                color: #f1e8ff;
+            }
+
+            .hero-header {
+                padding-top: 120px !important;
+                background-image: url('https://images.unsplash.com/photo-1736597817314-387e3d0d0bb8?q=80&w=699&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                color: #f5f5f5;
+            }
+
+            .hero-header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0);
+                z-index: 0;
+            }
+
+            .hero-header>.container {
+                position: relative;
+                z-index: 1;
+            }
+
+            .navbar {
+                background-color: #312d2f;
+                font-family: "Poppins", sans-serif;
+                font-size: 0.9rem;
+                padding: 1.5rem;
+            }
+
+            .footer {
+                background: #312d2f;
+                color: #f5f5f5;
+                text-align: center;
+                padding: 1.5rem;
+                font-family: "Poppins", sans-serif;
+                font-size: 0.9rem;
+                border: 1px solid #312d2f;
+            }
+
+            /*Lomakkeen laatikko*/
+            form {
+                background-color: #312d2f !important;
+                border-radius: 0;
+                padding: 1.5rem;
+            }
+
+            /*Kentät*/
+            form input,
+            form textarea {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                /*Teksti näkyy*/
+                border: 1px solid #ffffff !important;
+                /*Reuna sama kuin tausta*/
+                border-radius: 0 !important;
+                /*Ei pyöristetty*/
+            }
+
+            /*Lähetyspainike*/
+            button.btn {
+                background-color: rgb(90, 83, 87);
+                color: #ffffff;
+                border: 1px solid #312d2f;
+                border-radius: 0;
+            }
+
+            button.btn:hover {
+                background-color: #ffffff;
+            }
+
+            a.btn-outline-danger {
+                border-radius: 0 !important;
+            }
+        </style>
+
+        <!--Hampurilaisvalikko-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+        </script>
+
+</body>
+
+</html>
